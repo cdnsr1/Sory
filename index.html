@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tha lỗi cho anh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8d7da;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        h1 {
+            color: #c0392b;
+            margin-top: 50px;
+            padding: 0 20px;
+        }
+        .button-container {
+            margin-top: 50px;
+            position: relative;
+            height: calc(100vh - 200px);
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: absolute;
+        }
+        .yes {
+            background-color: #27ae60;
+            color: #fff;
+        }
+        .yes:hover {
+            background-color: #2ecc71;
+        }
+        .no {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Em có đồng ý tha lỗi cho anh không? ❤️</h1>
+    <div class="button-container">
+        <button class="yes" style="left: 40%; top: 40%;">Đồng ý</button>
+        <button class="no" style="left: 20%; top: 60%;" onmouseover="moveButton()">Không</button>
+    </div>
+
+    <script>
+        function moveButton() {
+            const button = document.querySelector('.no');
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 50);
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
